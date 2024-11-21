@@ -211,6 +211,10 @@ import GlowingLogo from "@/app/components/GlowingLogo";
 import SocialLinkButton from "@/app/components/SocialLinkButton";
 import { FaTelegramPlane, FaGlobe, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import Image from "next/image";
+
+
+
 
 // Social links with just icons
 const socialLinks = [
@@ -262,7 +266,14 @@ export default function SocialLinksPage() {
             rel="noopener noreferrer"
             className="flex items-center justify-start w-64 h-12 border border-white rounded-full bg-transparent text-white font-semibold hover:bg-green-500 transition duration-300"
           >
-            <img src={link.logo} alt={`${link.label} logo`} className="h-8 w-8 mr-8" />
+            {/* <img src={link.logo} alt={`${link.label} logo`} className="h-8 w-8 mr-8" /> */}
+            <Image
+          src={link.logo}
+          alt={`${link.label} logo`}
+          layout="fill"  // This ensures the image takes the size of the container
+          objectFit="contain" // Ensures the image fits well without stretching
+          className="rounded-full" // You can add rounded-full here to make the logo circular
+        />
             <span>{link.label}</span>
           </a>
         ))}

@@ -57,15 +57,19 @@
 
 
 import React from "react";
+import Image from "next/image";
+
 
 const GlowingLogo: React.FC = () => {
   return (
     <div className="flex flex-col items-center text-white">
       <div className="relative flex items-center justify-center">
         <div className="absolute h-20 w-20 animate-pulse rounded-full bg-green-500 blur-xl"></div>
-        <img
+        <Image
           src="/logo.png" // Ensure your logo is in the public folder
           alt="PolluxChain Logo"
+          width={112}  // Width of the image in px
+          height={112} // Height of the image in px
           className="h-28 w-28"
         />
       </div>
