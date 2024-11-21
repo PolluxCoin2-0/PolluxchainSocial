@@ -1,24 +1,64 @@
+
+
+// import React from "react";
+// import { IconType } from "react-icons";
+
+// interface SocialLinkButtonProps {
+//   href: string;
+//   icon: IconType; // React Icons
+//   label: string;
+// }
+
+// const SocialLinkButton: React.FC<SocialLinkButtonProps> = ({ href, icon: Icon, label }) => {
+//   return (
+//     <a
+//       href={href}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       className="flex items-center space-x-4 hover:scale-105 transition-transform duration-300"
+//     >
+//       {/* Icon Section */}
+//       <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white relative overflow-hidden">
+//         <div className="absolute inset-0 border-[1px] border-green-500 animate-pulse"></div>
+//         <Icon className="h-6 w-6 text-white" />
+//       </div>
+
+//       {/* Label Section */}
+//       <div className="flex h-12 items-center rounded-full px-6 border border-white bg-transparent text-white text-sm font-medium">
+//         {label}
+//       </div>
+//     </a>
+//   );
+// };
+
+// export default SocialLinkButton;
+
+
 import React from "react";
+import { IconType } from "react-icons";
 
 interface SocialLinkButtonProps {
   href: string;
-  icon: string; // Path to icon
+  icon: IconType; // React Icons
   label: string;
 }
 
-const SocialLinkButton: React.FC<SocialLinkButtonProps> = ({ href, icon, label }) => {
+const SocialLinkButton: React.FC<SocialLinkButtonProps> = ({ href, icon: Icon, label }) => {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center space-x-2 mb-4"
+      className="flex items-center space-x-4 hover:scale-105 transition-transform duration-300"
     >
-      <div className="flex h-10 w-10 items-center justify-center rounded-md border border-white bg-black relative overflow-hidden">
-        <div className="absolute inset-0 border-[1px] border-green-500 animate-pulse"></div>
-        <img src={icon} alt={`${label} icon`} className="h-5 w-5" />
+      {/* Icon Section */}
+      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white relative overflow-hidden">
+        <div className="absolute inset-0 border-[1px"></div>
+        <Icon className="h-6 w-6 text-white" />
       </div>
-      <div className="flex h-10 items-center rounded-md bg-gray-100 px-4 font-medium text-black">
+
+      {/* Label Section */}
+      <div className="flex h-12 w-48 items-center justify-center rounded-full border border-white bg-transparent text-white text-base font-semibold">
         {label}
       </div>
     </a>
