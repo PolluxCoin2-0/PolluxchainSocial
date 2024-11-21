@@ -30,7 +30,7 @@ const productLinks = [
 
 const SocialLinksPage = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-black">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-black pt-16">
       {/* Glowing Logo Section */}
       <GlowingLogo />
 
