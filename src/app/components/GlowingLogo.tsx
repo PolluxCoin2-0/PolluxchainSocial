@@ -64,7 +64,7 @@ const GlowingLogo: React.FC = () => {
   return (
     <div className="flex flex-col items-center text-white">
       <div className="relative flex items-center justify-center">
-        <div className="absolute h-20 w-20 animate-pulse rounded-full bg-green-500 blur-xl"></div>
+        <div className="absolute h-24 w-24 animate-pulse rounded-full bg-green-500 blur-xl"></div>
         <Image
           src="/logo.png" // Ensure your logo is in the public folder
           alt="PolluxChain Logo"
