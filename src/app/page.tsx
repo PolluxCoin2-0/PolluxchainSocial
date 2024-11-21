@@ -57,7 +57,7 @@ const SocialLinksPage = () => {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-start space-x-6 w-full sm:w-64 h-12 border border-white rounded-full bg-transparent text-white font-semibold hover:bg-green-500 transition duration-300 hover:scale-105"
+            className="flex items-center justify-start space-x-6 w-full sm:w-[400px] h-12 border border-white rounded-full bg-transparent text-white font-semibold hover:bg-green-500 transition duration-300 hover:scale-105"
           >
             {/* Logo Image on the left with left padding */}
             <div className="relative h- w-10 p- border border-transparent rounded-full pl-2">
