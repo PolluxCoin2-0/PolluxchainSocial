@@ -571,7 +571,7 @@ const SocialLinksPage = () => {
       <GlowingLogo />
 
       {/* Social Links Section (Horizontal icons only) */}
-      <div className="mt-8 flex space-x-6 justify-center flex-wrap gap-4 sm:gap-6">
+      <div className="mt-8 flex space-x justify-center flex-wrap gap-4 sm:gap-6">
         {socialLinks.map((link) => (
           <a
             key={link.href}
